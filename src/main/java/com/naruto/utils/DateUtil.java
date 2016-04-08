@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class DateUtil {
 	
-	public static final String DATE_FORMAT = "YYYY-MM-dd HH:mm:ss";
+	public static final String DATE_FORMAT = "yyy-MM-dd HH:mm:ss";
 	
 	private static final SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
 	
@@ -16,6 +16,7 @@ public class DateUtil {
 		Date date = new Date();
 		System.out.println(dateToString(date));
 		System.out.println(timestampToString(ts));
+		System.out.println(Timestamp.valueOf(dateToString(date)).getTime());
 		
 	}
 	
