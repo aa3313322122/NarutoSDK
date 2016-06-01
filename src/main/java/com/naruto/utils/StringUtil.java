@@ -9,6 +9,14 @@ public class StringUtil
 		System.out.println(s.substring(index));
 		System.out.println(s.substring(0, index));
 	    
+		String str= "GDSZ001";
+		System.out.println(str.startsWith(str));
+		StringBuffer sb = new StringBuffer();
+		if(sb.length() == 0)
+		{
+			System.out.println("q");
+		}
+		
 	}
 	
 
